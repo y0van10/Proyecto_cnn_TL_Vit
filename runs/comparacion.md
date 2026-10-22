@@ -1,0 +1,21 @@
+| Modelo | Parám. (M) | GFLOPs | Tamaño (MB) | Latencia CPU (ms) | Acc val | F1 macro val | ECE val | Acc test | F1 macro test | ECE test |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CNN desde cero | 1.17 | 0.42 | 4.7 | 6.0 | 0.9566 | 0.9608 | 0.136 | 0.8812 | 0.8844 | 0.105 |
+| MobileNetV3-Large (TL) | 4.53 | 0.43 | 18.3 | 18.0 | 0.9920 | 0.9928 | 0.149 | 0.9617 | 0.9567 | 0.125 |
+| ViT-B/32 (TL) | 87.46 | 8.72 | 349.9 | 88.0 | 0.9895 | 0.9904 | 0.156 | 0.9617 | 0.9615 | 0.155 |
+
+Entorno: Intel(R) Xeon(R) Processor @ 2.80GHz (2 hilos), PyTorch 2.14.1+cu130
+Modelo seleccionado: **MobileNetV3-Large (TL)** — Mayor F1 macro en val; entre modelos a <=1 punto del mejor se elige el de menor latencia en CPU (la app corre en tiempo real).
+
+Robustez (F1 macro en test):
+
+| Perturbación | CNN desde cero | MobileNetV3-Large (TL) | ViT-B/32 (TL) |
+|---|---|---|---|
+| original | 0.884 | 0.957 | 0.961 |
+| oscuro (x0.45) | 0.877 | 0.939 | 0.944 |
+| sobreexpuesto (x1.6) | 0.789 | 0.950 | 0.918 |
+| desenfoque (r=2.5) | 0.861 | 0.946 | 0.916 |
+| ruido (σ=20) | 0.899 | 0.885 | 0.938 |
+| JPEG q=15 | 0.835 | 0.936 | 0.927 |
+| balance de blancos | 0.778 | 0.892 | 0.890 |
+| rotado 90° | 0.890 | 0.953 | 0.941 |

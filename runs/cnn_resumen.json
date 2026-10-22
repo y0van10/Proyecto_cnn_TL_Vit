@@ -1,0 +1,18 @@
+{
+  "modelo": "cnn",
+  "mejor_val_f1_macro": 0.96075452820533,
+  "epocas": 35,
+  "minutos": 77.02872649828593,
+  "dispositivo": "cpu",
+  "parametros": 1174244,
+  "img_size": 128,
+  "fases": [
+    {
+      "nombre": "end-to-end",
+      "epocas": 35,
+      "lr": 0.002,
+      "descongelar": -1,
+      "wd": 0.0005
+    }
+  ]
+}

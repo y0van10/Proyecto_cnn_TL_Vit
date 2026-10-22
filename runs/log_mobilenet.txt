@@ -1,0 +1,22 @@
+Dispositivo: cpu (2 hilos)
+[pesos] mobilenet: preentrenado cargado desde /home/claude/weights/mobilenetv3_large_100_ra-f55367f5.pth (ignoradas: 0)
+MobileNetV3-Large (TL): 4.53 M parámetros | train=6568 val=2486 | img=224 | pesos clase=[1.36 1.18 0.65 0.8 ]
+
+=== Fase 'capas-finales': 3 épocas | entrenables 0.33 M | lr cabeza=1e-03
+[mobilenet] ep 01 capas-finales loss 0.604 acc 0.912 | val loss 0.262 acc 0.959 F1 0.960 | 203s  *mejor*
+[mobilenet] ep 02 capas-finales loss 0.475 acc 0.976 | val loss 0.268 acc 0.946 F1 0.950 | 199s
+[mobilenet] ep 03 capas-finales loss 0.458 acc 0.984 | val loss 0.252 acc 0.955 F1 0.957 | 203s
+
+=== Fase 'fine-tuning': 10 épocas | entrenables 4.34 M | lr cabeza=1e-03 backbone=1e-04
+[mobilenet] ep 04 fine-tuning   loss 0.476 acc 0.972 | val loss 0.200 acc 0.976 F1 0.978 | 260s  *mejor*
+[mobilenet] ep 05 fine-tuning   loss 0.408 acc 0.998 | val loss 0.166 acc 0.989 F1 0.990 | 242s  *mejor*
+[mobilenet] ep 06 fine-tuning   loss 0.394 acc 1.000 | val loss 0.182 acc 0.992 F1 0.993 | 251s  *mejor*
+[mobilenet] ep 07 fine-tuning   loss 0.390 acc 0.999 | val loss 0.163 acc 0.989 F1 0.990 | 243s
+[mobilenet] ep 08 fine-tuning   loss 0.386 acc 0.999 | val loss 0.150 acc 0.990 F1 0.991 | 242s
+[mobilenet] ep 09 fine-tuning   loss 0.384 acc 0.999 | val loss 0.168 acc 0.986 F1 0.987 | 236s
+[mobilenet] ep 10 fine-tuning   loss 0.382 acc 1.000 | val loss 0.163 acc 0.987 F1 0.988 | 245s
+[mobilenet] ep 11 fine-tuning   loss 0.381 acc 1.000 | val loss 0.159 acc 0.987 F1 0.988 | 238s
+[mobilenet] ep 12 fine-tuning   loss 0.381 acc 1.000 | val loss 0.155 acc 0.989 F1 0.990 | 236s
+[mobilenet] ep 13 fine-tuning   loss 0.381 acc 1.000 | val loss 0.162 acc 0.988 F1 0.989 | 236s
+
+Listo en 50.6 min. Mejor F1 val = 0.9928 -> /home/claude/runs/mobilenet.pt

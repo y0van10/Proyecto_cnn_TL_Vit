@@ -1,0 +1,14 @@
+{
+  "modelo": "mobilenet",
+  "nombre": "MobileNetV3-Large (TL)",
+  "criterio": "Mayor F1 macro en val; entre modelos a <=1 punto del mejor se elige el de menor latencia en CPU (la app corre en tiempo real).",
+  "f1_macro": 0.9927949376747078,
+  "latencia_cpu_ms": 17.988714300008724,
+  "f1_macro_test": 0.9567054814912832,
+  "entorno": {
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.80GHz",
+    "hilos": 2,
+    "torch": "2.14.1+cu130",
+    "gpu": null
+  }
+}

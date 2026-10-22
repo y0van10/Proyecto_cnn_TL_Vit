@@ -1,0 +1,16 @@
+Dispositivo: cpu (2 hilos)
+[pesos] vit: preentrenado cargado desde /home/claude/weights/jx_vit_base_patch32_224_in21k-8db57226.pth (ignoradas: 0)
+ViT-B/32 (TL): 87.46 M parámetros | train=6568 val=2486 | img=224 | pesos clase=[1.36 1.18 0.65 0.8 ]
+
+=== Fase 'cabeza': 2 épocas | entrenables 0.00 M | lr cabeza=2e-03
+[vit] ep 01 cabeza        loss 0.861 acc 0.853 | val loss 0.651 acc 0.859 F1 0.848 | 534s  *mejor*
+[vit] ep 02 cabeza        loss 0.612 acc 0.940 | val loss 0.597 acc 0.864 F1 0.854 | 495s  *mejor*
+
+=== Fase 'fine-tuning': 5 épocas | entrenables 28.36 M | lr cabeza=1e-03 backbone=3e-05
+[vit] ep 03 fine-tuning   loss 0.479 acc 0.978 | val loss 0.231 acc 0.981 F1 0.983 | 710s  *mejor*
+[vit] ep 04 fine-tuning   loss 0.416 acc 0.997 | val loss 0.210 acc 0.986 F1 0.988 | 708s  *mejor*
+[vit] ep 05 fine-tuning   loss 0.407 acc 0.997 | val loss 0.197 acc 0.988 F1 0.989 | 682s  *mejor*
+[vit] ep 06 fine-tuning   loss 0.401 acc 0.999 | val loss 0.198 acc 0.989 F1 0.990 | 704s  *mejor*
+[vit] ep 07 fine-tuning   loss 0.401 acc 0.997 | val loss 0.198 acc 0.990 F1 0.990 | 707s  *mejor*
+
+Listo en 75.7 min. Mejor F1 val = 0.9904 -> /home/claude/runs/vit.pt

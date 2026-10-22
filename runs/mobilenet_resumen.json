@@ -1,0 +1,26 @@
+{
+  "modelo": "mobilenet",
+  "mejor_val_f1_macro": 0.9927949376747078,
+  "epocas": 13,
+  "minutos": 50.57731596231461,
+  "dispositivo": "cpu",
+  "parametros": 4530996,
+  "img_size": 224,
+  "fases": [
+    {
+      "nombre": "capas-finales",
+      "epocas": 3,
+      "lr": 0.001,
+      "descongelar": 0,
+      "wd": 0.0001
+    },
+    {
+      "nombre": "fine-tuning",
+      "epocas": 10,
+      "lr": 0.001,
+      "lr_backbone": 0.0001,
+      "descongelar": 3,
+      "wd": 0.0001
+    }
+  ]
+}

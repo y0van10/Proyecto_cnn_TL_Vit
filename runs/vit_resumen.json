@@ -1,0 +1,26 @@
+{
+  "modelo": "vit",
+  "mejor_val_f1_macro": 0.9904422134538686,
+  "epocas": 7,
+  "minutos": 75.712677526474,
+  "dispositivo": "cpu",
+  "parametros": 87458308,
+  "img_size": 224,
+  "fases": [
+    {
+      "nombre": "cabeza",
+      "epocas": 2,
+      "lr": 0.002,
+      "descongelar": 0,
+      "wd": 0.0001
+    },
+    {
+      "nombre": "fine-tuning",
+      "epocas": 5,
+      "lr": 0.001,
+      "lr_backbone": 3e-05,
+      "descongelar": 4,
+      "wd": 0.05
+    }
+  ]
+}

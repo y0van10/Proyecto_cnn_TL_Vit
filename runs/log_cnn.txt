@@ -1,0 +1,41 @@
+Dispositivo: cpu (2 hilos)
+CNN desde cero: 1.17 M parámetros | train=6568 val=2486 | img=128 | pesos clase=[1.36 1.18 0.65 0.8 ]
+
+=== Fase 'end-to-end': 35 épocas | entrenables 1.17 M | lr cabeza=2e-03 backbone=2e-03
+[cnn] ep 01 end-to-end    loss 1.002 acc 0.649 | val loss 1.013 acc 0.535 F1 0.497 | 131s  *mejor*
+[cnn] ep 02 end-to-end    loss 0.856 acc 0.753 | val loss 0.729 acc 0.704 F1 0.724 | 386s  *mejor*
+[cnn] ep 03 end-to-end    loss 0.746 acc 0.816 | val loss 0.792 acc 0.701 F1 0.715 | 335s
+[cnn] ep 04 end-to-end    loss 0.646 acc 0.873 | val loss 0.767 acc 0.758 F1 0.771 | 122s  *mejor*
+[cnn] ep 05 end-to-end    loss 0.592 acc 0.908 | val loss 0.569 acc 0.801 F1 0.823 | 124s  *mejor*
+[cnn] ep 06 end-to-end    loss 0.539 acc 0.932 | val loss 0.413 acc 0.886 F1 0.895 | 122s  *mejor*
+[cnn] ep 07 end-to-end    loss 0.522 acc 0.941 | val loss 0.476 acc 0.819 F1 0.833 | 121s
+[cnn] ep 08 end-to-end    loss 0.503 acc 0.952 | val loss 0.509 acc 0.811 F1 0.827 | 123s
+[cnn] ep 09 end-to-end    loss 0.479 acc 0.961 | val loss 0.292 acc 0.915 F1 0.925 | 130s  *mejor*
+[cnn] ep 10 end-to-end    loss 0.465 acc 0.971 | val loss 0.461 acc 0.831 F1 0.854 | 124s
+[cnn] ep 11 end-to-end    loss 0.462 acc 0.970 | val loss 0.342 acc 0.894 F1 0.906 | 125s
+[cnn] ep 12 end-to-end    loss 0.451 acc 0.976 | val loss 0.416 acc 0.833 F1 0.854 | 121s
+[cnn] ep 13 end-to-end    loss 0.450 acc 0.978 | val loss 0.297 acc 0.919 F1 0.928 | 115s  *mejor*
+[cnn] ep 14 end-to-end    loss 0.436 acc 0.982 | val loss 0.349 acc 0.897 F1 0.911 | 114s
+[cnn] ep 15 end-to-end    loss 0.436 acc 0.982 | val loss 0.337 acc 0.891 F1 0.903 | 120s
+[cnn] ep 16 end-to-end    loss 0.431 acc 0.984 | val loss 0.369 acc 0.866 F1 0.870 | 116s
+[cnn] ep 17 end-to-end    loss 0.422 acc 0.989 | val loss 0.277 acc 0.931 F1 0.935 | 114s  *mejor*
+[cnn] ep 18 end-to-end    loss 0.425 acc 0.987 | val loss 0.286 acc 0.926 F1 0.933 | 114s
+[cnn] ep 19 end-to-end    loss 0.421 acc 0.988 | val loss 0.341 acc 0.892 F1 0.903 | 111s
+[cnn] ep 20 end-to-end    loss 0.413 acc 0.991 | val loss 0.342 acc 0.889 F1 0.903 | 113s
+[cnn] ep 21 end-to-end    loss 0.411 acc 0.993 | val loss 0.354 acc 0.891 F1 0.903 | 114s
+[cnn] ep 22 end-to-end    loss 0.408 acc 0.994 | val loss 0.275 acc 0.932 F1 0.937 | 112s  *mejor*
+[cnn] ep 23 end-to-end    loss 0.406 acc 0.994 | val loss 0.309 acc 0.906 F1 0.917 | 113s
+[cnn] ep 24 end-to-end    loss 0.403 acc 0.994 | val loss 0.313 acc 0.910 F1 0.913 | 115s
+[cnn] ep 25 end-to-end    loss 0.402 acc 0.996 | val loss 0.284 acc 0.918 F1 0.927 | 120s
+[cnn] ep 26 end-to-end    loss 0.400 acc 0.996 | val loss 0.249 acc 0.939 F1 0.945 | 122s  *mejor*
+[cnn] ep 27 end-to-end    loss 0.399 acc 0.996 | val loss 0.307 acc 0.894 F1 0.907 | 125s
+[cnn] ep 28 end-to-end    loss 0.397 acc 0.996 | val loss 0.245 acc 0.957 F1 0.961 | 120s  *mejor*
+[cnn] ep 29 end-to-end    loss 0.397 acc 0.996 | val loss 0.298 acc 0.913 F1 0.923 | 117s
+[cnn] ep 30 end-to-end    loss 0.394 acc 0.999 | val loss 0.244 acc 0.948 F1 0.952 | 116s
+[cnn] ep 31 end-to-end    loss 0.394 acc 0.998 | val loss 0.272 acc 0.924 F1 0.933 | 112s
+[cnn] ep 32 end-to-end    loss 0.394 acc 0.997 | val loss 0.283 acc 0.916 F1 0.926 | 111s
+[cnn] ep 33 end-to-end    loss 0.394 acc 0.998 | val loss 0.270 acc 0.923 F1 0.932 | 113s
+[cnn] ep 34 end-to-end    loss 0.394 acc 0.998 | val loss 0.271 acc 0.928 F1 0.937 | 113s
+[cnn] ep 35 end-to-end    loss 0.391 acc 0.999 | val loss 0.279 acc 0.914 F1 0.925 | 117s
+
+Listo en 77.0 min. Mejor F1 val = 0.9608 -> /home/claude/runs/cnn.pt
